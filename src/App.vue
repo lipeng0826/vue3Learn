@@ -11,15 +11,17 @@ import { RouterView } from 'vue-router';
       <div>
         <RouterLink to="/HomeView">entry/HomeView</RouterLink>
       </div>
+      <!-- basic -->
       <div>
         <RouterLink to="/1basic/1basicUse">1basic/1basicUse</RouterLink>
       </div>
       <div>
-        <RouterLink to="/1basic/2animation">1basic/2animation</RouterLink>
+        <RouterLink to="/1basic/2basicUse">1basic/2basicUse</RouterLink>
       </div>
       <div>
-        <RouterLink to="/1basic/3basicUse">1basic/3basicUse</RouterLink>
+        <RouterLink to="/1basic/animation">1basic/animation</RouterLink>
       </div>
+      <!-- vuex -->
       <div>
         <RouterLink to="/2vuex/1demo">2vuex/vuexDemo</RouterLink>
       </div>
