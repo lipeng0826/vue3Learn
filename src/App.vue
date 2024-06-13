@@ -43,6 +43,7 @@ import { RouterView } from 'vue-router';
   /* 添加立体感阴影 */
   background-image: linear-gradient(to bottom, #bddfff, #5dc8ff);
   /* 上下渐变 */
+  z-index: 9999999;
 
   &:hover {
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
