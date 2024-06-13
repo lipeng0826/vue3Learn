@@ -18,9 +18,9 @@ const router = createRouter({
       component: () => import('../views/AboutView.vue')
     },
     {
-      path: '/1basic/1template',
+      path: '/1basic/1basicUse',
       name: '1template',
-      component: () => import('../views/1.basic/1template.vue')
+      component: () => import('../views/1.basic/1basicUse.vue')
     },
     {
       path: '/1basic/2animation',

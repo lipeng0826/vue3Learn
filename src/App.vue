@@ -12,7 +12,7 @@ import { RouterView } from 'vue-router';
         <RouterLink to="/HomeView">entry/HomeView</RouterLink>
       </div>
       <div>
-        <RouterLink to="/1basic/1template">1basic/1template</RouterLink>
+        <RouterLink to="/1basic/1basicUse">1basic/1basicUse</RouterLink>
       </div>
       <div>
         <RouterLink to="/1basic/2animation">1basic/2animation</RouterLink>
