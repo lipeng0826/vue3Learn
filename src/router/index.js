@@ -21,7 +21,17 @@ const router = createRouter({
       path: '/1basic/1template',
       name: '1template',
       component: () => import('../views/1.basic/1template.vue')
-    }
+    },
+    {
+      path: '/1basic/2animation',
+      name: '2animation',
+      component: () => import('../views/1.basic/2animation-test.vue')
+    },
+    {
+      path: '/2vuex/1demo',
+      name: 'vuexDemo',
+      component: () => import('../views/2.vuex使用/1demo/vuex-demo.vue')
+    },
   ]
 })
 
