@@ -19,13 +19,18 @@ const router = createRouter({
     },
     {
       path: '/1basic/1basicUse',
-      name: '1template',
+      name: '1basicUse',
       component: () => import('../views/1.basic/1basicUse.vue')
     },
     {
       path: '/1basic/2animation',
       name: '2animation',
       component: () => import('../views/1.basic/2animation-test.vue')
+    },
+    {
+      path: '/1basic/3basicUse',
+      name: '3basicUse',
+      component: () => import('../views/1.basic/3basicUse.vue')
     },
     {
       path: '/2vuex/1demo',
