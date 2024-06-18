@@ -22,6 +22,15 @@ import { RouterView } from 'vue-router';
         <RouterLink to="/1basic/3basicUse">1basic/3basicUse</RouterLink>
       </div>
       <div>
+        <RouterLink to="/1basic/4toRefs">1basic/4toRefs</RouterLink>
+      </div>
+      <div>
+        <RouterLink to="/1basic/5computed">1basic/5computed</RouterLink>
+      </div>
+      <div>
+        <RouterLink to="/1basic/6watch">1basic/6watch</RouterLink>
+      </div>
+      <div>
         <RouterLink to="/1basic/animation">1basic/animation</RouterLink>
       </div>
       <!-- vuex -->

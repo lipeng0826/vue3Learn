@@ -38,6 +38,21 @@ const router = createRouter({
       component: () => import('../views/1.basic/3basicUse.vue')
     },
     {
+      path: '/1basic/4toRefs',
+      name: '4toRefs',
+      component: () => import('../views/1.basic/4toRefs.vue')
+    },
+    {
+      path: '/1basic/5computed',
+      name: '5computed',
+      component: () => import('../views/1.basic/5computed.vue')
+    },
+    {
+      path: '/1basic/6watch',
+      name: '6watch',
+      component: () => import('../views/1.basic/6watch.vue')
+    },
+    {
       path: '/2vuex/1demo',
       name: 'vuexDemo',
       component: () => import('../views/2.vuex使用/1demo/vuex-demo.vue')
