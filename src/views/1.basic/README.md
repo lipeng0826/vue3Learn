@@ -55,3 +55,47 @@ const updateCount = () => {
 
     1.使用script标签，lang="ts"表示使用typescript
     2.使用setup关键字，可以直接定义属性和方法，不需要再写setup函数
+
+![alt text](image.png)
+  使用vue-official插件的这个配置会在你输入的时候自动提示.value
+
+## 数据响应
+
+### 基本数据类型使用ref
+
+```js
+  // 定义响应式数据
+  const count = ref(0);
+  // 修改数据
+  const updateCount = () => {
+    count.value++;
+  };
+```
+
+    1.使用ref包裹基本数据类型，使其变成响应式数据
+    2.ref也可以包裹引用类型数据，但和reactive的区别是，ref包裹的引用类型数据，只有.value是响应式的
+    3.修改数据时，需要通过.value来修改才会触发响应式
+
+### 引用类型数据
+
+```js
+  // 定义响应式数据
+  const obj = reactive({
+    name: 'Vue3',
+    count: 0
+  });
+  // 修改数据
+  const updateCount = () => {
+    obj.count++;
+  };
+```
+
+    1.使用reactive包裹引用类型数据，使其变成响应式数据,并且遍历对象的属性也是响应式的
+    2.修改数据时，直接修改obj中的属性即可，不用.value
+    3.使用reactive不能赋值，否则会断开响应式；
+    4.在对象的响应中，多使用reactive，省的写.value了；
+
+我理解：本质上基本数据类型只能使用ref，因为基本数据类型无法使用proxy，把它包装成对象，再使用proxy，这样就可以实现响应式了；
+而引用类型数据，本身就是对象，直接使用proxy就可以实现响应式了；
+
+### 111

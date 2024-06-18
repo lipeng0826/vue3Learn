@@ -33,6 +33,11 @@ const router = createRouter({
       component: () => import('../views/1.basic/2basicUse.vue')
     },
     {
+      path: '/1basic/3basicUse',
+      name: '3basicUse',
+      component: () => import('../views/1.basic/3basicUse.vue')
+    },
+    {
       path: '/2vuex/1demo',
       name: 'vuexDemo',
       component: () => import('../views/2.vuex使用/1demo/vuex-demo.vue')

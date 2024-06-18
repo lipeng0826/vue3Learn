@@ -19,6 +19,9 @@ import { RouterView } from 'vue-router';
         <RouterLink to="/1basic/2basicUse">1basic/2basicUse</RouterLink>
       </div>
       <div>
+        <RouterLink to="/1basic/3basicUse">1basic/3basicUse</RouterLink>
+      </div>
+      <div>
         <RouterLink to="/1basic/animation">1basic/animation</RouterLink>
       </div>
       <!-- vuex -->
