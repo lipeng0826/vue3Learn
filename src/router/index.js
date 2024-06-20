@@ -53,9 +53,36 @@ const router = createRouter({
       component: () => import('../views/1.basic/6watch.vue')
     },
     {
-      path: '/2vuex/1demo',
+      path: '/1basic/7watchEffect',
+      name: '7watchEffect',
+      component: () => import('../views/1.basic/7watchEffect.vue')
+    },
+    // ---------------
+    {
+      path: '/2senior/1ref',
+      name: '1ref',
+      component: () => import('../views/2.senior/1ref.vue')
+    },
+    {
+      path: '/2senior/2props',
+      name: '2props',
+      component: () => import('../views/2.senior/2props/App.vue')
+    },
+    {
+      path: '/2senior/3lifeCycle',
+      name: '3lifeCycle',
+      component: () => import('../views/2.senior/3lifeCycle/App.vue')
+    },
+    // ---------------
+    {
+      path: '/3+ts/1basic',
+      name: 'tsBasic',
+      component: () => import('../views/3.+ts/1basic.vue')
+    },
+    {
+      path: '/6vuex/1demo',
       name: 'vuexDemo',
-      component: () => import('../views/2.vuex使用/1demo/vuex-demo.vue')
+      component: () => import('../views/6.vuex使用/1demo/vuex-demo.vue')
     },
   ]
 })

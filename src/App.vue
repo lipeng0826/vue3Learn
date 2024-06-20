@@ -31,11 +31,28 @@ import { RouterView } from 'vue-router';
         <RouterLink to="/1basic/6watch">1basic/6watch</RouterLink>
       </div>
       <div>
+        <RouterLink to="/1basic/7watchEffect">1basic/7watchEffect</RouterLink>
+      </div>
+      <div>
         <RouterLink to="/1basic/animation">1basic/animation</RouterLink>
+      </div>
+      <!-- senior -->
+      <div>
+        <RouterLink to="/2senior/1ref">/2senior/1ref</RouterLink>
+      </div>
+      <div>
+        <RouterLink to="/2senior/2props">/2senior/2props</RouterLink>
+      </div>
+      <div>
+        <RouterLink to="/2senior/3lifeCycle">/2senior/3lifeCycle</RouterLink>
+      </div>
+      <!-- ts -->
+      <div>
+        <RouterLink to="/3+ts/1basic">/3+ts/1basic</RouterLink>
       </div>
       <!-- vuex -->
       <div>
-        <RouterLink to="/2vuex/1demo">2vuex/vuexDemo</RouterLink>
+        <RouterLink to="/6vuex/1demo">6vuex/vuexDemo</RouterLink>
       </div>
     </div>
     <RouterView />
