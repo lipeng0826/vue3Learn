@@ -2,8 +2,10 @@
   <div>
     <h2>当前水温: {{ temp }}</h2>
     <h2>当前水位: {{ height }}</h2>
+    <h2>当前天数: {{ day }}</h2>
     <button @click="addTemp">水位加10</button>
     <button @click="addHeight">水位加10</button>
+    <button @click="addDay">天数加10</button>
   </div>
 </template>
 <script lang="ts" setup name="3basicUse">
@@ -12,6 +14,7 @@ import { ref, watch, watchEffect } from 'vue';
 
 let temp = ref(37);
 let height = ref(10);
+let day = ref(0);
 
 const addTemp = () => {
   temp.value += 10;
@@ -19,6 +22,10 @@ const addTemp = () => {
 
 const addHeight = () => {
   height.value += 10;
+}
+
+const addDay = () => {
+  day.value += 10;
 }
 
 // watch实现监控值的变化

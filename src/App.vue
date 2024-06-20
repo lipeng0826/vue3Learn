@@ -46,6 +46,9 @@ import { RouterView } from 'vue-router';
       <div>
         <RouterLink to="/2senior/3lifeCycle">/2senior/3lifeCycle</RouterLink>
       </div>
+      <div>
+        <RouterLink to="/2senior/4hooks">/2senior/4hooks</RouterLink>
+      </div>
       <!-- ts -->
       <div>
         <RouterLink to="/3+ts/1basic">/3+ts/1basic</RouterLink>

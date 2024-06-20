@@ -73,6 +73,11 @@ const router = createRouter({
       name: '3lifeCycle',
       component: () => import('../views/2.senior/3lifeCycle/App.vue')
     },
+    {
+      path: '/2senior/4hooks',
+      name: '4hooks',
+      component: () => import('../views/2.senior/4自定义hooks/App.vue')
+    },
     // ---------------
     {
       path: '/3+ts/1basic',

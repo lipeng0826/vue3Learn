@@ -8,14 +8,15 @@
 </template>
 <script lang="ts" setup name="3basicUse">
 
-import { ref, watchEffect } from 'vue';
+import { ref, watchEffect, onMounted } from 'vue';
 
 function showLog() {
   console.log(title2.value);
 }
 
+// 这个变量在模板中的ref="title2"指向的dom给赋值
 let title2 = ref();
-watchEffect(() => {
+onMounted(() => {
   title2.value && title2.value.focus();
 })
 

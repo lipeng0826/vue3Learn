@@ -119,3 +119,8 @@ const updateCount = () => {
     4.监听多个数据，可以使用数组，也可以使用对象
       1.监视响应式对象的某个基本数据类型，需要写成函数的形式
     watch配置： 1.deep 2.immediate 3.lazy
+
+### watchEffect
+
+  类似于watch，但是不需要指定监听的数据，只要数据变化，就会执行回调函数；
+  如果watchEffect里面的数据没变化，那么回调函数不会执行；
