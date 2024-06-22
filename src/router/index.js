@@ -97,9 +97,9 @@ const router = createRouter({
       component: () => import('../views/5.pinia/1baiscUse/App.vue')
     },
     {
-      path: '/6vuex/1demo',
+      path: '/7vuex/1demo',
       name: 'vuexDemo',
-      component: () => import('../views/6.vuex使用/1demo/vuex-demo.vue')
+      component: () => import('../views/7.vuex使用/1demo/vuex-demo.vue')
     },
   ]
 })

@@ -63,7 +63,7 @@ import { RouterView } from 'vue-router';
       </div>
       <!-- vuex -->
       <div>
-        <RouterLink to="/6vuex/1demo">6vuex/vuexDemo</RouterLink>
+        <RouterLink to="/7vuex/1demo">7vuex/vuexDemo</RouterLink>
       </div>
     </div>
     <RouterView />
