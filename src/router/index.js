@@ -84,6 +84,18 @@ const router = createRouter({
       name: 'tsBasic',
       component: () => import('../views/3.+ts/1basic.vue')
     },
+    // ---------------
+    {
+      path: '/4router/2params',
+      name: 'routerParams',
+      component: () => import('../views/4.router/2params.vue')
+    },
+    // ---------------
+    {
+      path: '/5pinia/1basicUse',
+      name: '/5pinia/1basicUse',
+      component: () => import('../views/5.pinia/1baiscUse/App.vue')
+    },
     {
       path: '/6vuex/1demo',
       name: 'vuexDemo',

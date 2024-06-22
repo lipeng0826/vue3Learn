@@ -53,6 +53,14 @@ import { RouterView } from 'vue-router';
       <div>
         <RouterLink to="/3+ts/1basic">/3+ts/1basic</RouterLink>
       </div>
+      <!-- router -->
+      <div>
+        <RouterLink to="/4router/2params">/4router/2params</RouterLink>
+      </div>
+      <!-- vuex -->
+      <div>
+        <RouterLink to="/5pinia/1basicUse">/5pinia/1basicUse</RouterLink>
+      </div>
       <!-- vuex -->
       <div>
         <RouterLink to="/6vuex/1demo">6vuex/vuexDemo</RouterLink>

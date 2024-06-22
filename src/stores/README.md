@@ -2,6 +2,18 @@
 
 ## 通过一下例子了解pinia的基本使用
 
+第一步在入口js引入和安装pinia
+
+```js
+
+// 引入pinia
+import { createPinia } from 'pinia'
+// 安装pinia
+app.use(createPinia())
+```
+
+定义一个store
+
 ```js
 import { ref, computed } from 'vue'
 import { defineStore } from 'pinia'

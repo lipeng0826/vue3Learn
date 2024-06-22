@@ -5,3 +5,8 @@ export interface PersonInter {
   age: number;
   x?: number;
 }
+
+export interface LoveTalk {
+  id: string;
+  content: string;
+}
