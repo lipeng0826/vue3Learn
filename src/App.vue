@@ -57,9 +57,26 @@ import { RouterView } from 'vue-router';
       <div>
         <RouterLink to="/4router/2params">/4router/2params</RouterLink>
       </div>
-      <!-- vuex -->
+      <!-- pinia -->
       <div>
         <RouterLink to="/5pinia/1basicUse">/5pinia/1basicUse</RouterLink>
+      </div>
+      <!-- event -->
+      <!-- <div>
+        <RouterLink to="/6event/">/5pinia/1basicUse</RouterLink>
+      </div> -->
+      <div class="sub-list">
+        <router-link active-class="active" class="list-group-item" to="/6event/props">1. props</router-link>
+        <router-link active-class="active" class="list-group-item" to="/6event/event">2. 自定义事件</router-link>
+        <router-link active-class="active" class="list-group-item" to="/6event/mitt">3. mitt</router-link>
+        <router-link active-class="active" class="list-group-item" to="/6event/model">4. v-model</router-link>
+        <router-link active-class="active" class="list-group-item" to="/6event/attrs">5. $attrs</router-link>
+        <router-link active-class="active" class="list-group-item" to="/6event/ref-parent">6. <span
+            class="small">$refs、$parent</span></router-link>
+        <router-link active-class="active" class="list-group-item" to="/6event/provide-inject">7.
+          provide、inject</router-link>
+        <router-link active-class="active" class="list-group-item" to="/6event/pinia">8. pinia</router-link>
+        <router-link active-class="active" class="list-group-item" to="/6event/slot">9. slot</router-link>
       </div>
       <!-- vuex -->
       <div>
@@ -109,6 +126,25 @@ import { RouterView } from 'vue-router';
         color: greenyellow;
         /* 蓝色 */
       }
+    }
+  }
+
+  .sub-list {
+    margin-top: 10px;
+    margin-left: 15px;
+
+    .list-group-item {
+      font-weight: bold;
+      color: navy;
+
+      &:hover {
+        color: greenyellow;
+      }
+    }
+
+    >a {
+      display: block;
+      margin-left: 20px;
     }
   }
 

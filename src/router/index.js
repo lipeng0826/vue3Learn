@@ -1,6 +1,17 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 
+import Props from '@/views/6.event/01_props/Father.vue'
+import Event from '@/views/6.event/02_custom-event/Father.vue'
+import Bus from '@/views/6.event/03_mitt/Father.vue'
+import Model from '@/views/6.event/04_v-model/Father.vue'
+import AttrsListeners from '@/views/6.event/05_$attrs/Father.vue'
+import RefChildrenParent from '@/views/6.event/06_$refs-$parent/Father.vue'
+import ProvideInject from '@/views/6.event/07_provide-inject/Father.vue'
+import Pinia from '@/views/6.event/08_pinia/Father.vue'
+import Slot from '@/views/6.event/09_slot/Father.vue'
+
+
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
@@ -95,6 +106,49 @@ const router = createRouter({
       path: '/5pinia/1basicUse',
       name: '/5pinia/1basicUse',
       component: () => import('../views/5.pinia/1baiscUse/App.vue')
+    },
+    // ---------------
+    {
+      path: '/6event',
+      name: '6event',
+      children: [
+        {
+          path: '/6event/props',
+          component: Props
+        },
+        {
+          path: '/6event/event',
+          component: Event
+        },
+        {
+          path: '/6event/mitt',
+          component: Bus
+        },
+        {
+          path: '/6event/model',
+          component: Model
+        },
+        {
+          path: '/6event/attrs',
+          component: AttrsListeners
+        },
+        {
+          path: '/6event/ref-parent',
+          component: RefChildrenParent
+        },
+        {
+          path: '/6event/provide-inject',
+          component: ProvideInject
+        },
+        {
+          path: '/6event/pinia',
+          component: Pinia
+        },
+        {
+          path: '/6event/slot',
+          component: Slot
+        },
+      ]
     },
     {
       path: '/7vuex/1demo',
