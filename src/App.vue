@@ -78,7 +78,9 @@ import DragBox from '@/components/dragBox/App.vue';
           <router-link active-class="active" class="list-group-item" to="/6event/provide-inject">7.
             provide、inject</router-link>
           <router-link active-class="active" class="list-group-item" to="/6event/pinia">8. pinia</router-link>
-          <router-link active-class="active" class="list-group-item" to="/6event/slot">9. slot</router-link>
+          <router-link active-class="active" class="list-group-item" to="/6event/slot_default">9.1slot_default</router-link>
+          <router-link active-class="active" class="list-group-item" to="/6event/slot_juming">9.2slot_juming</router-link>
+          <router-link active-class="active" class="list-group-item" to="/6event/Slot_ZuoYongYu">9.3slot_ZuoYongYu</router-link>
         </div>
         <!-- vuex -->
         <div>

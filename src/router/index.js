@@ -9,7 +9,9 @@ import AttrsListeners from '@/views/6.event/05_$attrs/Father.vue'
 import RefChildrenParent from '@/views/6.event/06_$refs-$parent/Father.vue'
 import ProvideInject from '@/views/6.event/07_provide-inject/Father.vue'
 import Pinia from '@/views/6.event/08_pinia/Father.vue'
-import Slot from '@/views/6.event/09_slot/Father.vue'
+import Slot_Default from '@/views/6.event/09_1slot_默认插槽/Father.vue'
+import Slot_JuMing from '@/views/6.event/09_2slot_具名插槽/Father.vue'
+import Slot_ZuoYongYu from '@/views/6.event/09_3slot_作用域插槽/Father.vue'
 
 
 const router = createRouter({
@@ -145,8 +147,16 @@ const router = createRouter({
           component: Pinia
         },
         {
-          path: '/6event/slot',
-          component: Slot
+          path: '/6event/slot_juming',
+          component: Slot_JuMing
+        },
+        {
+          path: '/6event/slot_default',
+          component: Slot_Default
+        },
+        {
+          path: '/6event/slot_zuoyongyu',
+          component: Slot_ZuoYongYu
         },
       ]
     },
