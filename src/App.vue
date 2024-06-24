@@ -1,88 +1,91 @@
 <script setup>
 import { RouterView } from 'vue-router';
+import DragBox from '@/components/dragBox/App.vue';
 
 </script>
 <template>
   <div>
-    <div class="tabs-list">
-      <div>
-        <RouterLink to="/AboutView">entry/AboutView</RouterLink>
-      </div>
-      <div>
-        <RouterLink to="/HomeView">entry/HomeView</RouterLink>
-      </div>
-      <!-- basic -->
-      <div>
-        <RouterLink to="/1basic/1basicUse">1basic/1basicUse</RouterLink>
-      </div>
-      <div>
-        <RouterLink to="/1basic/2basicUse">1basic/2basicUse</RouterLink>
-      </div>
-      <div>
-        <RouterLink to="/1basic/3basicUse">1basic/3basicUse</RouterLink>
-      </div>
-      <div>
-        <RouterLink to="/1basic/4toRefs">1basic/4toRefs</RouterLink>
-      </div>
-      <div>
-        <RouterLink to="/1basic/5computed">1basic/5computed</RouterLink>
-      </div>
-      <div>
-        <RouterLink to="/1basic/6watch">1basic/6watch</RouterLink>
-      </div>
-      <div>
-        <RouterLink to="/1basic/7watchEffect">1basic/7watchEffect</RouterLink>
-      </div>
-      <div>
-        <RouterLink to="/1basic/animation">1basic/animation</RouterLink>
-      </div>
-      <!-- senior -->
-      <div>
-        <RouterLink to="/2senior/1ref">/2senior/1ref</RouterLink>
-      </div>
-      <div>
-        <RouterLink to="/2senior/2props">/2senior/2props</RouterLink>
-      </div>
-      <div>
-        <RouterLink to="/2senior/3lifeCycle">/2senior/3lifeCycle</RouterLink>
-      </div>
-      <div>
-        <RouterLink to="/2senior/4hooks">/2senior/4hooks</RouterLink>
-      </div>
-      <!-- ts -->
-      <div>
-        <RouterLink to="/3+ts/1basic">/3+ts/1basic</RouterLink>
-      </div>
-      <!-- router -->
-      <div>
-        <RouterLink to="/4router/2params">/4router/2params</RouterLink>
-      </div>
-      <!-- pinia -->
-      <div>
-        <RouterLink to="/5pinia/1basicUse">/5pinia/1basicUse</RouterLink>
-      </div>
-      <!-- event -->
-      <!-- <div>
+    <DragBox :top="100" :right="350" :age="18">
+      <div class="tabs-list">
+        <div>
+          <RouterLink to="/AboutView">entry/AboutView</RouterLink>
+        </div>
+        <div>
+          <RouterLink to="/HomeView">entry/HomeView</RouterLink>
+        </div>
+        <!-- basic -->
+        <div>
+          <RouterLink to="/1basic/1basicUse">1basic/1basicUse</RouterLink>
+        </div>
+        <div>
+          <RouterLink to="/1basic/2basicUse">1basic/2basicUse</RouterLink>
+        </div>
+        <div>
+          <RouterLink to="/1basic/3basicUse">1basic/3basicUse</RouterLink>
+        </div>
+        <div>
+          <RouterLink to="/1basic/4toRefs">1basic/4toRefs</RouterLink>
+        </div>
+        <div>
+          <RouterLink to="/1basic/5computed">1basic/5computed</RouterLink>
+        </div>
+        <div>
+          <RouterLink to="/1basic/6watch">1basic/6watch</RouterLink>
+        </div>
+        <div>
+          <RouterLink to="/1basic/7watchEffect">1basic/7watchEffect</RouterLink>
+        </div>
+        <div>
+          <RouterLink to="/1basic/animation">1basic/animation</RouterLink>
+        </div>
+        <!-- senior -->
+        <div>
+          <RouterLink to="/2senior/1ref">/2senior/1ref</RouterLink>
+        </div>
+        <div>
+          <RouterLink to="/2senior/2props">/2senior/2props</RouterLink>
+        </div>
+        <div>
+          <RouterLink to="/2senior/3lifeCycle">/2senior/3lifeCycle</RouterLink>
+        </div>
+        <div>
+          <RouterLink to="/2senior/4hooks">/2senior/4hooks</RouterLink>
+        </div>
+        <!-- ts -->
+        <div>
+          <RouterLink to="/3+ts/1basic">/3+ts/1basic</RouterLink>
+        </div>
+        <!-- router -->
+        <div>
+          <RouterLink to="/4router/2params">/4router/2params</RouterLink>
+        </div>
+        <!-- pinia -->
+        <div>
+          <RouterLink to="/5pinia/1basicUse">/5pinia/1basicUse</RouterLink>
+        </div>
+        <!-- event -->
+        <!-- <div>
         <RouterLink to="/6event/">/5pinia/1basicUse</RouterLink>
       </div> -->
-      <div class="sub-list">
-        <router-link active-class="active" class="list-group-item" to="/6event/props">1. props</router-link>
-        <router-link active-class="active" class="list-group-item" to="/6event/event">2. 自定义事件</router-link>
-        <router-link active-class="active" class="list-group-item" to="/6event/mitt">3. mitt</router-link>
-        <router-link active-class="active" class="list-group-item" to="/6event/model">4. v-model</router-link>
-        <router-link active-class="active" class="list-group-item" to="/6event/attrs">5. $attrs</router-link>
-        <router-link active-class="active" class="list-group-item" to="/6event/ref-parent">6. <span
-            class="small">$refs、$parent</span></router-link>
-        <router-link active-class="active" class="list-group-item" to="/6event/provide-inject">7.
-          provide、inject</router-link>
-        <router-link active-class="active" class="list-group-item" to="/6event/pinia">8. pinia</router-link>
-        <router-link active-class="active" class="list-group-item" to="/6event/slot">9. slot</router-link>
+        <div class="sub-list">
+          <router-link active-class="active" class="list-group-item" to="/6event/props">1. props</router-link>
+          <router-link active-class="active" class="list-group-item" to="/6event/event">2. 自定义事件</router-link>
+          <router-link active-class="active" class="list-group-item" to="/6event/mitt">3. mitt</router-link>
+          <router-link active-class="active" class="list-group-item" to="/6event/model">4. v-model</router-link>
+          <router-link active-class="active" class="list-group-item" to="/6event/attrs">5. $attrs</router-link>
+          <router-link active-class="active" class="list-group-item" to="/6event/ref-parent">6. <span
+              class="small">$refs、$parent</span></router-link>
+          <router-link active-class="active" class="list-group-item" to="/6event/provide-inject">7.
+            provide、inject</router-link>
+          <router-link active-class="active" class="list-group-item" to="/6event/pinia">8. pinia</router-link>
+          <router-link active-class="active" class="list-group-item" to="/6event/slot">9. slot</router-link>
+        </div>
+        <!-- vuex -->
+        <div>
+          <RouterLink to="/7vuex/1demo">7vuex/vuexDemo</RouterLink>
+        </div>
       </div>
-      <!-- vuex -->
-      <div>
-        <RouterLink to="/7vuex/1demo">7vuex/vuexDemo</RouterLink>
-      </div>
-    </div>
+    </DragBox>
     <RouterView />
   </div>
 </template>
@@ -90,8 +93,6 @@ import { RouterView } from 'vue-router';
 <style scoped lang="less">
 .tabs-list {
   position: absolute;
-  top: 120px;
-  right: 120px;
   width: 250px;
   height: 200px;
   overflow: auto;

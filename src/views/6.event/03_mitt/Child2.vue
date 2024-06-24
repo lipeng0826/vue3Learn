@@ -15,7 +15,7 @@
 
 	// 给emitter绑定send-toy事件
 	emitter.on('send-toy',(value:any)=>{
-		toy.value = value
+		toy.value = value 
 	})
 	// 在组件卸载时解绑send-toy事件
 	onUnmounted(()=>{

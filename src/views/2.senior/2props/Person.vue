@@ -13,15 +13,15 @@
 import { type PersonInter } from '@/types/index';
 
 // 接收list
-// defineProps(['list'])
+// const { list } = defineProps(['list'])
 
 // 接收+限制类型
-// defineProps<{list: PersonInter}>()
+const { list } = defineProps<{list: PersonInter}>()
 
 // 接收+限制类型+必要限制+默认值
-withDefaults(defineProps<{list?: PersonInter}>(), {
-    list: [{ id: '1', name: 'zhangsan', age: 18 }]
-})
+// withDefaults(defineProps<{list?: PersonInter}>(), {
+//     list: [{ id: '1', name: 'zhangsan', age: 18 }]
+// })
 
 </script>
 

@@ -1,6 +1,8 @@
 <template>
 	<div class="child">
 		<h3>子组件</h3>
+		<!-- <GrandChild :a="a" :b="b" :c="c" :d="d" /> -->
+		<!-- <GrandChild v-bind="{a:a,b:b,c:c,d:d}" /> -->
 		<GrandChild v-bind="$attrs"/>
 	</div>
 </template>
