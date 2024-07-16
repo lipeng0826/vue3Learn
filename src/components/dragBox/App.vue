@@ -26,6 +26,12 @@ const dragbox = ref(null);
 x.value = window.innerWidth - (props.right || 0)
 y.value = props.top || 0;
 
+/**
+ * 
+ * onMouseDown事件我们如何判断是在组件内部还是在外部触发的呢？
+ *  通过dom.contains函数判断；
+ */
+
 onmousedown = (e: MouseEvent) => {
   if (!dragbox.value || !dragbox.value.contains(e.target)) {
     return;
