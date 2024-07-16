@@ -7,12 +7,12 @@ import DragBox from '@/components/dragBox/App.vue';
   <div>
     <DragBox :top="100" :right="350" :age="18">
       <div class="tabs-list">
-        <div>
+        <!-- <div>
           <RouterLink to="/AboutView">entry/AboutView</RouterLink>
         </div>
         <div>
           <RouterLink to="/HomeView">entry/HomeView</RouterLink>
-        </div>
+        </div> -->
         <!-- basic -->
         <div>
           <RouterLink to="/1basic/1basicUse">1basic/1basicUse</RouterLink>

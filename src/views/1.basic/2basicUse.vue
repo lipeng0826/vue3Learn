@@ -27,11 +27,11 @@ import { ref, reactive } from 'vue';
 
 // ref包裹基本数据类型
 let count = ref(0);
+// reactive包裹对象
 const Person = reactive({
   name: 'zhangsan',
   age: 18,
 })
-// reactive包裹对象
 const GameList = reactive([
   { id: 1, name: '王者荣耀' },
   { id: 2, name: '英雄联盟' },

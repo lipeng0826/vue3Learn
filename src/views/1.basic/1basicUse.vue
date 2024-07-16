@@ -1,3 +1,15 @@
+<template>
+  <div>count: {{ count }}</div>
+  <div>
+    <button @click="log1">log1</button><br/>
+
+    <button @click="updateCount">updateCount</button>
+  </div>
+
+  <div>
+    description:setup的基本用法；
+  </div>
+</template>
 <script lang="ts">
 
 export default {
@@ -25,14 +37,5 @@ export default {
 }
 
 </script>
-
-<template>
-  <div>count: {{ count }}</div>
-  <div>
-    <button @click="log1">log1</button><br/>
-
-    <button @click="updateCount">updateCount</button>
-  </div>
-</template>
 
 <style scoped></style>
