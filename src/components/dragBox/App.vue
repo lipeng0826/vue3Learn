@@ -1,5 +1,6 @@
 <template>
-  <div class="draggable" :style="{ position: 'fixed', top: y + 'px', left: x + 'px' }" @mousedown="onMouseDown">
+  <div ref="dragbox" class="draggable" :style="{ position: 'fixed', top: y + 'px', left: x + 'px' }"
+    @mousedown="onMouseDown">
     <slot></slot>
   </div>
 </template>
@@ -20,11 +21,15 @@ let dragging = ref(false);
 let offsetX = ref(0);
 let offsetY = ref(0);
 let rightPos = ref(props.right);
+const dragbox = ref(null);
 
 x.value = window.innerWidth - (props.right || 0)
 y.value = props.top || 0;
 
 onmousedown = (e: MouseEvent) => {
+  if (!dragbox.value || !dragbox.value.contains(e.target)) {
+    return;
+  }
   dragging.value = true;
   offsetX.value = e.clientX - x.value;
   offsetY.value = e.clientY - y.value;

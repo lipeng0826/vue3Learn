@@ -1,19 +1,23 @@
 <template>
+  <Info>
+    <h2>setup的基本用法</h2>
+    <p>setup的基本用法</p>
+  </Info>
   <div>count: {{ count }}</div>
   <div>
-    <button @click="log1">log1</button><br/>
+    <button @click="log1">log1</button><br />
 
     <button @click="updateCount">updateCount</button>
   </div>
-
-  <div>
-    description:setup的基本用法；
-  </div>
 </template>
 <script lang="ts">
+import Info from "@/components/Info.vue"
 
 export default {
   name: '1basicUse',
+  components: {
+    Info
+  },
   setup() {
     // 定义非响应式数据
     let name = 'Vue3';
