@@ -1,11 +1,14 @@
 <template>
-  <div>
-    Vue3中的watch只能监视一下四种数据：<br />
-    1.ref定义的数据（包括计算属性）<br />
-    2.reactive定义的数据<br />
-    3.函数返回一个值（getter函数）<br />
-    4.一个包含上述内容的数组<br />
-  </div>
+  <Info>
+    <h2>watch的使用</h2>
+    <p>
+      Vue3中的watch只能监视一下四种数据：<br />
+      1.ref定义的数据（包括计算属性）<br />
+      2.reactive定义的数据<br />
+      3.函数返回一个值（getter函数）<br />
+      4.一个包含上述内容的数组<br />
+    </p>
+  </Info>
   <!--  -->
   <div>
     <h2>情况1: 监视基本数据类型</h2>
@@ -46,6 +49,7 @@
 <script lang="ts" setup name="3basicUse">
 
 import { ref, reactive, watch } from 'vue';
+import Info from "@/components/Info.vue"
 
 // -------condition1 ref------------
 const sum = ref(0);

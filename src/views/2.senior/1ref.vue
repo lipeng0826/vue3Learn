@@ -8,7 +8,7 @@
 </template>
 <script lang="ts" setup name="3basicUse">
 
-import { ref, watchEffect, onMounted } from 'vue';
+import { ref, onMounted } from 'vue';
 
 function showLog() {
   console.log(title2.value);

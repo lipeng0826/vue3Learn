@@ -1,4 +1,9 @@
 <template>
+  <Info>
+    <h2>watchEffect的使用</h2>
+    <p>
+    </p>
+  </Info>
   <div>
     <h2>当前水温: {{ temp }}</h2>
     <h2>当前水位: {{ height }}</h2>
@@ -11,6 +16,7 @@
 <script lang="ts" setup name="3basicUse">
 
 import { ref, watch, watchEffect } from 'vue';
+import Info from "@/components/Info.vue"
 
 let temp = ref(37);
 let height = ref(10);
