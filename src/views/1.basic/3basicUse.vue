@@ -1,4 +1,10 @@
 <template>
+  <Info>
+    <h2>ref,reactive的赋值问题</h2>
+    <p>
+      reactive不能直接赋值，
+    </p>
+  </Info>
   <div>
     <div>
       <div style="margin-bottom: 10px">
@@ -19,6 +25,8 @@
 <script lang="ts" setup name="3basicUse">
 
 import { ref, reactive } from 'vue';
+import Info from "@/components/Info.vue"
+
 // reactive包裹对象
 let gameContent = reactive({});
 let gameContentRef = ref({});

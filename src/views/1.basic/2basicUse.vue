@@ -1,4 +1,8 @@
 <template>
+  <Info>
+    <h2>ref,reactive的基本用法</h2>
+    <p>ref,reactive的基本用法</p>
+  </Info>
   <div>count: {{ count }}</div>
   <div>
     <button @click="log1">log1</button><br />
@@ -24,6 +28,7 @@
 <script lang="ts" setup name="3basicUse">
 
 import { ref, reactive } from 'vue';
+import Info from "@/components/Info.vue"
 
 // ref包裹基本数据类型
 let count = ref(0);
@@ -64,7 +69,7 @@ const updateGameList = () => {
 };
 const updateAppleDevieceValue = () => {
   appleDevice.value[0].price = appleDevice.value[0].price + 1000;
-};  
+};
 
 </script>
 
