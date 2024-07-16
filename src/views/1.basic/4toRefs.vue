@@ -1,4 +1,16 @@
 <template>
+    <Info>
+    <h2>roRefs的使用</h2>
+    <p>
+      在使用解构赋值对对象进行解构的时候；如果是基本数据类型会出现无法修改数据；
+    </p>
+    <p>
+      因为基本类型结构相当于是创建了新的变量，修改新的变量不会影响旧的值，所以无法修改；
+    </p>
+    <p>
+      引用数据类型因为引用的是对象的地址；修改的是同一个对象，所以不存在问题；
+    </p>
+  </Info>
   <div>
     <div>
       <div>name: {{ name }}, age: {{ age }}</div>
@@ -22,6 +34,7 @@
 <script lang="ts" setup name="3basicUse">
 
 import { reactive, toRefs } from 'vue';
+import Info from "@/components/Info.vue"
 
 let person = reactive({
   name: 'lipeng',
