@@ -1,7 +1,7 @@
 <template>
   <Info>
     <h2>ref,reactive的赋值问题</h2>
-    <p>
+    <p class="bindTest">
       reactive不能直接赋值,ref.value可以
     </p>
     <p>
@@ -27,6 +27,9 @@
     <button @click="initGameArr">获取游戏内容</button>
     <div>
       <div v-for="item in gameContentArr" :key="item.id">{{ item.name }}</div>
+    </div>
+    <div>
+      <button @click="updateColor">更新颜色</button>
     </div>
   </div>
 </template>
@@ -60,6 +63,16 @@ const initGameArr = () => {
   gameContentArr.push({ id: 1, name: '1212' });
 }
 
+const bgColor = ref('red');
+
+const updateColor = () => {
+  bgColor.value = 'green';
+}
+
 </script>
 
-<style scoped></style>
+<style scoped>
+  .bindTest {
+   background-color: v-bind(bgColor); 
+  }
+</style>

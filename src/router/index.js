@@ -84,8 +84,7 @@ const router = createRouter({
     {
       path: '/2senior/2props',
       name: '2props',
-      // component: () => import('../views/2.senior/2props/App.vue')
-      component: () => import('../views/2.senior/5.propsL例子/App.vue')
+      component: () => import('../views/2.senior/2props/App.vue')
     },
     {
       path: '/2senior/3lifeCycle',
@@ -96,6 +95,21 @@ const router = createRouter({
       path: '/2senior/4hooks',
       name: '4hooks',
       component: () => import('../views/2.senior/4自定义hooks/App.vue')
+    },
+    {
+      path: '/2senior/5.propsL',
+      name: '5.propsL',
+      component: () => import('../views/2.senior/5.propsL例子/App.vue')
+    },
+    {
+      path: '/2senior/teleport',
+      name: 'teleport',
+      component: () => import('../views/2.senior/6.Teleport/App.vue')
+    },
+    {
+      path: '/2senior/emitEvent',
+      name: 'emitEvent',
+      component: () => import('../views/2.senior/7.EmitEvent/App.vue')
     },
     // ---------------
     {

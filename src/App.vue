@@ -63,6 +63,15 @@ onMounted(() => {
         <div>
           <RouterLink active-class="active" to="/2senior/4hooks">/2senior/4hooks</RouterLink>
         </div>
+        <div>
+          <RouterLink active-class="active" to="/2senior/longIncrease">2senior/5.propsL</RouterLink>
+        </div>
+        <div>
+          <RouterLink active-class="active" to="/2senior/teleport">2senior/6.Teleport</RouterLink>
+        </div>
+        <div>
+          <RouterLink active-class="active" to="/2senior/emitEvent">2senior/emitEvent</RouterLink>
+        </div>
         <!-- ts -->
         <div>
           <RouterLink active-class="active" to="/3+ts/1basic">/3+ts/1basic</RouterLink>
