@@ -31,6 +31,8 @@
         </template>
       </Category>
     </div>
+    <button @click="updateList">更新list</button>
+    <button @click="updateAny">更新vidoeUrl</button>
   </div>
 </template>
 
@@ -46,6 +48,15 @@
   ])
   let imgUrl = ref('https://z1.ax1x.com/2023/11/19/piNxLo4.jpg')
   let videoUrl = ref('http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4')
+
+  const updateList = () => {
+    games[3].name = games[3].name === '斗罗大陆2' ? '斗罗大陆' : '斗罗大陆2';
+  }
+  const updateAny = () => {
+    const path = 'http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4';
+    const path2 = 'http://clips.vorwaerts-gmbh.de/big_buck_bunny-1.mp4';
+    videoUrl.value =  videoUrl.value === path ? path2 :path;
+  }
 
 </script>
 

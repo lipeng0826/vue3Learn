@@ -2,6 +2,8 @@
   <Info>
     <h2>ref,reactive的基本用法</h2>
     <p>ref,reactive的基本用法</p>
+    <p>reactive对对象的多个层级都会监听</p>
+    <p>shallowReactive对对象可以单层级监听</p>
   </Info>
   <div>count: {{ count }}</div>
   <div>
@@ -14,9 +16,10 @@
   </div>
   <div>
     <ul>
-      <li v-for="item in GameList" :key="item.id">{{ item.name }}</li>
+      <li v-for="item in GameList" :key="item.id">{{ item.name }} {{ item.car ? item.car.name: '' }} </li>
     </ul>
     <button @click="updateGameList">updateGameList</button>
+    <button @click="updateGameCar">更新深层属性</button>
   </div>
   <div>
     <ul>
@@ -37,8 +40,8 @@ const Person = reactive({
   name: 'zhangsan',
   age: 18,
 })
-const GameList = reactive([
-  { id: 1, name: '王者荣耀' },
+const GameList: any = reactive([
+  { id: 1, name: '王者荣耀' , car: {type: 'tesla', name: 'ModelY'}},
   { id: 2, name: '英雄联盟' },
   { id: 3, name: '绝地求生' },
   { id: 4, name: '和平精英' },
@@ -66,6 +69,9 @@ const updatePersonName = () => {
 };
 const updateGameList = () => {
   GameList[0].name = 'cs';
+};
+const updateGameCar = () => {
+  GameList[0].car && GameList[0].car.name && (GameList[0].car.name = 'ModelX');
 };
 const updateAppleDevieceValue = () => {
   appleDevice.value[0].price = appleDevice.value[0].price + 1000;

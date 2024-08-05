@@ -70,6 +70,11 @@ const router = createRouter({
       name: '7watchEffect',
       component: () => import('../views/1.basic/7watchEffect.vue')
     },
+    {
+      path: '/1basic/8Test',
+      name: '8Test',
+      component: () => import('../views/1.basic/8Test.vue')
+    },
     // ---------------
     {
       path: '/2senior/1ref',
@@ -79,7 +84,8 @@ const router = createRouter({
     {
       path: '/2senior/2props',
       name: '2props',
-      component: () => import('../views/2.senior/2props/App.vue')
+      // component: () => import('../views/2.senior/2props/App.vue')
+      component: () => import('../views/2.senior/5.propsL例子/App.vue')
     },
     {
       path: '/2senior/3lifeCycle',
@@ -164,6 +170,11 @@ const router = createRouter({
       path: '/7vuex/1demo',
       name: 'vuexDemo',
       component: () => import('../views/7.vuex使用/1demo/vuex-demo.vue')
+    },
+    {
+      path: '/8other/longIncrease',
+      name: 'LongIncrease',
+      component: () => import('../views/8.other/longIncrease/index.vue')
     },
   ]
 })

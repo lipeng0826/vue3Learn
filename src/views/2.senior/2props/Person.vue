@@ -21,6 +21,8 @@ import { type PersonInter } from '@/types/index';
 // 接收+限制类型
 const { list, name } = defineProps<{list: PersonInter[], name: string}>()
 
+console.log(list, name);
+
 // 接收+限制类型+必要限制+默认值
 // withDefaults(defineProps<{list?: PersonInter[], name: string}>(), {
 //     list: [{ id: '1', name: 'zhangsan', age: 18 }],

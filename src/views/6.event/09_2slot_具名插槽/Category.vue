@@ -6,7 +6,15 @@
 </template>
 
 <script setup lang="ts" name="Category">
-  
+import { ref, defineProps, getCurrentInstance, onBeforeUpdate } from 'vue';
+
+onBeforeUpdate(() => {
+  console.log(1111);
+})
+
+// 搜索initSlots可以查看slot相关代码
+const instance = getCurrentInstance();
+console.log(instance);
 </script>
 
 <style scoped>
