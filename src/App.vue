@@ -50,6 +50,9 @@ onMounted(() => {
         <div>
           <RouterLink active-class="active" to="/1basic/animation">1basic/animation</RouterLink>
         </div>
+        <div>
+          <RouterLink active-class="active" to="/1basic/vFor&vIf">1basic//vFor&vIf</RouterLink>
+        </div>
         <!-- senior -->
         <div>
           <RouterLink active-class="active" to="/2senior/1ref">/2senior/1ref</RouterLink>

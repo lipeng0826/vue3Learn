@@ -75,6 +75,11 @@ const router = createRouter({
       name: '8Test',
       component: () => import('../views/1.basic/8Test.vue')
     },
+    {
+      path: '/1basic/vFor&vIf',
+      name: 'vFor&vIf',
+      component: () => import('../views/1.basic/9.vFor&vIf.vue')
+    },
     // ---------------
     {
       path: '/2senior/1ref',
