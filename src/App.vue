@@ -2,20 +2,30 @@
 import { RouterView } from 'vue-router';
 import DragBox from '@/components/dragBox/App.vue';
 
-import { onMounted, onUpdated } from 'vue';
-import { useRouter } from 'vue-router';
+import { onMounted, onUpdated, ref } from 'vue';
+
+const listContainer = ref(null);
+
+const updatePos = () => {
+  const activeElement = listContainer.value.querySelector('.active');
+  if (activeElement) {
+    console.log('element.getBoundingClientRect().top', activeElement.getBoundingClientRect().top)
+    listContainer.value.scrollTop = activeElement.getBoundingClientRect().top - 200;
+  }
+}
 
 onMounted(() => {
-  // 获取当前激活的路由
-  const router = useRouter();
-  console.log(router.currentRoute.value);
+  // 当前的逻辑暂时不知道什么时候激活active，先写个延时处理
+  setTimeout(() => {
+    updatePos();
+  }, 200)
 })
 
 </script>
 <template>
   <div>
     <DragBox :top="100" :right="350" :age="18">
-      <div class="tabs-list">
+      <div ref="listContainer" class="tabs-list">
         <!-- <div>
           <RouterLink active-class="active" to="/AboutView">entry/AboutView</RouterLink>
         </div>

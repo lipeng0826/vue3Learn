@@ -1,4 +1,13 @@
 <template>
+  <Info>
+    <h2>这是标题</h2>
+    <p>
+      这是内容
+    </p>
+    <p>
+      <CodeHighlight :code="code" />
+    </p>
+  </Info>
   <div class="father">
     <h3>父组件</h3>
     <h4>{{ username }}</h4>
@@ -25,6 +34,15 @@
   // 数据
   let username = ref('zhansgan')
   let password = ref('123456')
+  const code = ref(`
+  // 1.传给子组件
+  <AtguiguInput v-model:ming="username" v-model:mima="password"/>
+  // 2.子组件获取props和事件
+  defineProps(['ming','mima'])
+  const emit = defineEmits(['update:ming','update:mima'])
+  // 触发事件
+  @input="emit('update:ming',(<HTMLInputElement>$event.target).value)"
+  `);
 </script>
 
 <style scoped>

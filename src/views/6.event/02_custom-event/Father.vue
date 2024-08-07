@@ -1,31 +1,43 @@
 <template>
-  <div class="father">
-    <h3>父组件</h3>
+	<Info>
+		<h2>自定义事件</h2>
+		<p>
+			自定义事件使用@传入到子组件，子组件通过defineEmits接收
+		</p>
+		<p>
+			<CodeHighlight :code="code" />
+		</p>
+	</Info>
+	<div class="father">
+		<h3>父组件</h3>
 		<h4 v-show="toy">子给的玩具：{{ toy }}</h4>
 		<!-- 给子组件Child绑定事件 -->
-    <Child @send-toy="saveToy"/>
-  </div>
+		<Child @send-toy="saveToy" />
+	</div>
 </template>
 
 <script setup lang="ts" name="Father">
-  import Child from './Child.vue'
-	import { ref } from "vue";
-	// 数据
-	let toy = ref('')
-	// 用于保存传递过来的玩具
-	function saveToy(value:string){
-		console.log('saveToy',value)
-		toy.value = value
-	}
+import Child from './Child.vue'
+import { ref } from "vue";
+// 数据
+let toy = ref('')
+// 用于保存传递过来的玩具
+function saveToy(value: string) {
+	console.log('saveToy', value)
+	toy.value = value
+}
+
+const code = ref('<Child @send-toy="saveToy" /> defineEmits(["send-toy"])');
 </script>
 
 <style scoped>
-	.father{
-		background-color:rgb(165, 164, 164);
-		padding: 20px;
-    border-radius: 10px;
-	}
-	.father button{
-		margin-right: 5px;
-	}
+.father {
+	background-color: rgb(165, 164, 164);
+	padding: 20px;
+	border-radius: 10px;
+}
+
+.father button {
+	margin-right: 5px;
+}
 </style>

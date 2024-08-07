@@ -13,3 +13,9 @@
   3.开发组件
   src/components/codeHighLight.vue
   4.使用组件
+  5.设置自定义快捷键（可以到chatGpt搜索）
+    输入highLight，自动跳出代码
+
+## 增加antd-v的支持
+
+  [安装参考文档](https://www.antdv.com/docs/vue/getting-started-cn)

@@ -1,5 +1,10 @@
 <template>
   <pre><code ref="codeBlock" class="javascript">{{ code }}</code></pre>
+  <!-- <a-collapse v-model:activeKey="activeKey">
+    <a-collapse-panel>
+      <pre><code ref="codeBlock" class="javascript">{{ code }}</code></pre>
+    </a-collapse-panel>
+  </a-collapse> -->
 </template>
 
 <script>

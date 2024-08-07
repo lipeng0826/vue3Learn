@@ -1,4 +1,13 @@
 <template>
+  <Info>
+    <h2>Provider,inject</h2>
+    <p>
+      就是可以进行多层的数据传递
+    </p>
+    <p>
+      <CodeHighlight :code="code" />
+    </p>
+  </Info>
   <div class="father">
     <h3>父组件</h3>
     <h4>银子：{{ money }}万元</h4>
@@ -23,6 +32,15 @@
   // 向后代提供数据
   provide('moneyContext',{money,updateMoney})
   provide('car',car)
+
+  const code = ref(`
+    // 父组件Provider数据
+    provide('moneyContext',{money,updateMoney})
+    provide('car',car)
+    // 孙子组件获取值
+    let {money,updateMoney} = inject('moneyContext',{money:0,updateMoney:(param:number)=>{}})
+    let car = inject('car',{brand:'未知',price:0})
+  `);
 
 </script>
 
