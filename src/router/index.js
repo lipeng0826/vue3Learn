@@ -116,6 +116,11 @@ const router = createRouter({
       name: 'emitEvent',
       component: () => import('../views/2.senior/7.EmitEvent/App.vue')
     },
+    {
+      path: '/2senior/effectScope',
+      name: 'effectScope',
+      component: () => import('../views/2.senior/8.EffectScope/App.vue')
+    },
     // ---------------
     {
       path: '/3+ts/1basic',
@@ -194,6 +199,11 @@ const router = createRouter({
       path: '/8other/longIncrease',
       name: 'LongIncrease',
       component: () => import('../views/8.other/longIncrease/index.vue')
+    },
+    {
+      path: '/9keng/refUse1',
+      name: 'refUse1',
+      component: () => import('../views/9.一些坑点/1.ref包裹对象的基本类型属性.vue')
     },
   ]
 })

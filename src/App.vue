@@ -9,7 +9,7 @@ const listContainer = ref(null);
 const updatePos = () => {
   const activeElement = listContainer.value.querySelector('.active');
   if (activeElement) {
-    console.log('element.getBoundingClientRect().top', activeElement.getBoundingClientRect().top)
+    // console.log('element.getBoundingClientRect().top', activeElement.getBoundingClientRect().top)
     listContainer.value.scrollTop = activeElement.getBoundingClientRect().top - 200;
   }
 }
@@ -85,6 +85,9 @@ onMounted(() => {
         <div>
           <RouterLink active-class="active" to="/2senior/emitEvent">2senior/emitEvent</RouterLink>
         </div>
+        <div>
+          <RouterLink active-class="active" to="/2senior/effectScope">/2senior/effectScope</RouterLink>
+        </div>
         <!-- ts -->
         <div>
           <RouterLink active-class="active" to="/3+ts/1basic">/3+ts/1basic</RouterLink>
@@ -122,6 +125,9 @@ onMounted(() => {
         </div>
         <div>
           <RouterLink active-class="active" to="/8other/longIncrease">8other/longIncrease</RouterLink>
+        </div>
+        <div>
+          <RouterLink active-class="active" to="/9keng/refUse1">/9keng/refUse1</RouterLink>
         </div>
       </div>
     </DragBox>
