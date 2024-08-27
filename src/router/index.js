@@ -121,6 +121,11 @@ const router = createRouter({
       name: 'effectScope',
       component: () => import('../views/2.senior/8.EffectScope/App.vue')
     },
+    {
+      path: '/2senior/directive',
+      name: 'directive',
+      component: () => import('../views/2.senior/9.directive/App.vue')
+    },
     // ---------------
     {
       path: '/3+ts/1basic',

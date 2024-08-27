@@ -88,6 +88,9 @@ onMounted(() => {
         <div>
           <RouterLink active-class="active" to="/2senior/effectScope">/2senior/effectScope</RouterLink>
         </div>
+        <div>
+          <RouterLink active-class="active" to="/2senior/directive">/2senior/directive</RouterLink>
+        </div>
         <!-- ts -->
         <div>
           <RouterLink active-class="active" to="/3+ts/1basic">/3+ts/1basic</RouterLink>
