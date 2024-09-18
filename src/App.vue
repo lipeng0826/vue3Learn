@@ -127,7 +127,8 @@ onMounted(() => {
           <RouterLink active-class="active" to="/7vuex/1demo">7vuex/vuexDemo</RouterLink>
         </div>
         <div>
-          <RouterLink active-class="active" to="/8other/longIncrease">8other/longIncrease</RouterLink>
+          <div><RouterLink active-class="active" to="/8other/longIncrease">8other/longIncrease</RouterLink></div>
+          <div><RouterLink active-class="active" to="/8other/editableArea">8other/editableArea</RouterLink></div>
         </div>
         <div>
           <RouterLink active-class="active" to="/9keng/refUse1">/9keng/refUse1</RouterLink>

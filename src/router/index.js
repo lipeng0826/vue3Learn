@@ -206,6 +206,11 @@ const router = createRouter({
       component: () => import('../views/8.other/longIncrease/index.vue')
     },
     {
+      path: '/8other/editableArea',
+      name: 'EditableArea',
+      component: () => import('../views/8.other/editableArea/index.vue')
+    },
+    {
       path: '/9keng/refUse1',
       name: 'refUse1',
       component: () => import('../views/9.一些坑点/1.ref包裹对象的基本类型属性.vue')
